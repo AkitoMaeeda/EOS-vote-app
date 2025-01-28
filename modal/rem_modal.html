@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h2>候補者の削除</h2>
+    <p id = "info"></p>
+
+    <div id = "confirm">
+    <table id = "candidate_table">
+        <tr id = "candidate_list">
+            <th>候補者名</th> 
+        </tr>
+    </table>
+    <button class = "modal_btn" id = "close">戻る</button>
+    </div>
+
+    <div id = "execute">
+            <button class = "modal_btn" id = "back">修正</button>
+            <button class = "modal_btn" id = "submit">完了</button>
+    </div>
+
+    
+    <script type="module" src = "../src/modal/rem_modal.js"></script>
+
+</body>
+</html>

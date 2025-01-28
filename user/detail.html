@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self';">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1 id = "title">Vote Application</h1>
+    <div class = "event_list">
+        <h2>イベント詳細</h2>
+        <h3 id="event_name"></h3>
+        <div id = "time">
+            <div>
+                <p>開始時刻</p>
+                <p  id = "vote_start"></p>
+            </div>
+            <div>
+                <p>終了時刻</p>
+                <p id = "vote_fin"></p>
+            </div>
+        </div>
+
+        <h1 id = "info"></h1>
+        <table id = "candidate_table">
+            <tr id = "candidate_list">
+                <th>候補者名</th>
+            </tr>
+        </table>
+
+        <button class = "submit_btn" id = "vote">投票</button>
+    </div>
+
+    <script type="module" src = "../src/user/detail.js"></script>
+    <script type="module" src = "../src/base.js"></script>
+</body>
+</html>

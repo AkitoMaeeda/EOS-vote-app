@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1 id = "title">Vote Application</h1>
+    <h1>管理者ページ</h1>
+    <h2>新規イベントの作成</h2>
+
+    <div class = "form_box">
+        <form id = "create_event">
+            <p id = "info"></p><br>
+            <label for="event_name">イベント名: </label>
+            <input class = "event_info" type="text" id="event_name" name="event_name" required><br>
+
+            <label for="author">管理アカウント名: </label>
+            <input class = "event_info" type="text" id="author" name="author"  maxlength="12" minlength="12" required> <br>
+
+            <label for="vote_start">開始時間: </label>
+            <input class = "event_info" type = "datetime-local" id = "vote_start" required><br>
+
+            <label for="vote_fin">終了時間: </label>
+            <input class = "event_info" type = "datetime-local" id = "vote_fin" required><br>
+
+            <button class = "submit_btn" type="submit">作成</button>
+        </form>
+    </div>
+
+    <script type="module" src = "../src/adm/createevent.js"></script>
+    <script type="module" src = "../src/base.js"></script>
+</body>
+</html>

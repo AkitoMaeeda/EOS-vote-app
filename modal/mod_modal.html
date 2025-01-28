@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h2>イベント情報の編集</h2>
+    <p id = "info"></p>
+    <form id = "mod_event">
+        <div id = "confirm">
+            <label for="event_name">イベント名</label>
+            <input type="text" id="event_name" name="event_name" required><br>
+
+            <label for="vote_start">開始時間</label>
+            <input type = "datetime-local" id = "vote_start" required><br>
+
+            <label for="vote_fin">終了時間</label>
+            <input type = "datetime-local" id = "vote_fin" required><br>
+            <button class = "modal_btn" id = "close" type="button">戻る</button>
+            <button class = "modal_btn" id = "next" type="button">確認</button>
+        </div>
+
+        <div id = "execute">
+            <div>
+                <p id = "info_name"></p>
+                <p id = "info_start"></p>
+                <p id = "info_fin"></p>
+            </div>
+            <button class = "modal_btn" id = "back" type="button">修正</button>
+            <button class = "modal_btn" type="submit">完了</button>
+        </div>
+    </form>
+
+    <script type="module" src = "../src/modal/mod_modal.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h2>イベントの終了</h2>
+    <p id="info"></p>
+    <form id = "add_deckey">
+        <p id = "info"></p>
+            <label for="keytype">鍵[lamda]</label>
+            <input type = "text" id = "key_lamda" name="key_lamda" required><br>
+            <label for="keytype">鍵[mu]</label>
+            <input type = "text" id = "key_mu" name="key_mu" required><br>
+            <button class = "modal_btn" id = "close" type="button">戻る</button>
+            <button class = "modal_btn" type="submit">登録</button>
+
+    </form>
+
+    <script type="module" src = "../src/modal/fin_modal.js"></script>
+
+</body>
+</html>

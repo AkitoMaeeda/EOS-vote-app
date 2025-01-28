@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h2>候補者の追加</h2>
+    <p id="info"></p>
+    <form id = "add_candidate">
+        <p id = "info"></p>
+        <div id = "confirm">
+            <label for="candidate_name">追加する候補名</label>
+            <input type = "text" id = "candidate_name" name="candidate_name" required><br>
+            <button id = "close" type="button">戻る</button>
+            <button id = "next" type="button">確認</button>
+        </div>
+
+        <div id = "execute">
+            <button class = "modal_btn" id = "back" type="button">修正</button>
+            <button class = "modal_btn" type="submit">完了</button>
+        </div>
+    </form>
+
+    <script type="module" src = "../src/modal/add_modal.js"></script>
+
+</body>
+</html>

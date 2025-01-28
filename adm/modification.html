@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1 id = "title">Vote Application</h1>
+    <h1>管理者ページ</h1>
+    <div class = "event_list">
+    <h2>イベントの編集</h2>
+    <h3>編集するイベントをクリックしてください</h3>
+    <button id = "back">管理者TOPに戻る</button> 
+    <div>
+        <p id = info></p>
+        <table id = "event_table">
+            <tr id = "event_list">
+                <th>イベントid</th> <th>イベント名</th> <th>開始時間</th> <th>終了時間</th>
+            </tr>
+        </table>
+    </div>
+    </div>
+    
+    <script type="module" src = "../src/adm/modification.js"></script>
+    <script type="module" src = "../src/base.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1 id = "title">Vote Application</h1>
+    <h1>管理者ページ</h1>
+    <h2>アカウントの作成</h2>
+
+    <div class = "form_box">
+        <p id = "info"></p>
+        <form id = "create_account">
+            <label for="account_name">アカウント名(a~z,0~9を利用し、12文字固定)</label><br>
+            <input class = "name" type="text" id="account_name" name="account_name" pattern="[a-z0-9]*" maxlength="12" minlength="12" required><br>
+
+            <button class = "submit_btn" type="submit">新規アカウント作成</button>
+        </form>
+    </div>
+
+    <script type="module" src = "../src/adm/createacount.js"></script>
+    <script type="module" src = "../src/base.js"></script>
+</body>
+</html>

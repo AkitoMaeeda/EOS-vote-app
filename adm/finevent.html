@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1 id = "title">Vote Application</h1>
+    <h1>管理者ページ</h1>
+    <div class = "event_list">
+    <h2>集計を行うイベントを選択してください</h2>
+    <button id = "back">管理者TOPに戻る</button>
+
+    <form id = "search">
+        <label for="event_name">イベント名</label>
+        <input type="text" id = "event_name" name = "event_name"><br>
+        <button type="submit">検索</button>
+    </form>
+
+
+    
+        <p id = info></p>
+        <table id = "event_table">
+            <tr id = "event_list">
+                <th class = "event_cmp">イベントid</th>
+                <th class = "event_cmp" >イベント名</th>
+                <th class = "event_cmp" >開始時間</th>
+                <th class = "event_cmp" >終了時間</th>
+            </tr>
+        </table>
+    </div>
+
+
+    
+    <script type="module" src = "../src/adm/finevent.js"></script>
+    <script type="module" src = "../src/base.js"></script>
+</body>
+</html>
